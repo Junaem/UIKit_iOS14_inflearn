@@ -114,4 +114,31 @@ if inputValue >= "\u{30}" && inputValue <= "\u{39}" {
     print("영어다")
 }
 
+// String
 
+let sName = "lee min"
+let sName2 = "kim"
+
+for c in sName{
+    print(c)
+}
+print(sName + sName2)
+
+let myLongStr =
+"""
+hi
+  hello
+"""
+
+let isOn = true
+isOn.description
+
+let sNum = 123
+sNum.description
+String(sNum)
+
+"my number is \(sNum) \(myLongStr)"
+myLongStr.last
+myLongStr.dropLast()
+myLongStr.dropFirst()
+myLongStr.split(separator: "\n")
