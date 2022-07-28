@@ -142,3 +142,14 @@ myLongStr.last
 myLongStr.dropLast()
 myLongStr.dropFirst()
 myLongStr.split(separator: "\n")
+
+// Array
+var myNames = Array<String>()
+var myAges = [Int]()
+myNames.append("kin")
+myNames.append("lee")
+myNames.append("jin")
+myNames[0]
+myNames.count
+myNames.append(contentsOf: ["hi", "hello"])
+myNames.count 
