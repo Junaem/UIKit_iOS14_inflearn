@@ -60,7 +60,7 @@ var opt_result1 = (opt1 ?? 0) + (opt2 ?? 0)
 //var opt_result2 = opt1! + opt2!
 
 if opt1 != nil{
-    print(opt1) // 옵셔널 객체 자체를 프린트
+//    print(opt1) // 옵셔널 객체 자체를 프린트
     print(opt1!)
 }
 
@@ -143,13 +143,3 @@ myLongStr.dropLast()
 myLongStr.dropFirst()
 myLongStr.split(separator: "\n")
 
-// Array
-var myNames = Array<String>()
-var myAges = [Int]()
-myNames.append("kin")
-myNames.append("lee")
-myNames.append("jin")
-myNames[0]
-myNames.count
-myNames.append(contentsOf: ["hi", "hello"])
-myNames.count 
