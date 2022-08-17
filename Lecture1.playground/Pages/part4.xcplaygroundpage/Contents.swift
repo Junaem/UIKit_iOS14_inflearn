@@ -106,7 +106,7 @@ let isStartSomeText: (String, String) -> Bool = { name, find in
     if name.first?.description == find {    // description은 (Char를) String형으로 변환하는 메서드
         return true
     }
-    return false₩
+    return false
 }
 
 func find(findString: String, condition: (String, String) -> Bool) -> [String] {
