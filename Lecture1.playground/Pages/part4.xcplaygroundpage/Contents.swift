@@ -1,4 +1,5 @@
 import UIKit
+import Foundation
 
 //  Function 함수
 
@@ -125,3 +126,17 @@ print(someFind(find: "z"))
 print(find(findString: "a", condition: containsSomeText))
 print(find(findString: "a", condition: isStartSomeText))
 
+
+
+var names2 = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+
+//names2.sort(by: (String, String) throws -> Bool)
+//print(names2)
+
+//names2.sort { (a, b) -> Bool in
+//    a < b
+//}
+//names2.sort{ $0 < $1}
+//names2.sort(by: {$0 < $1})
+names2.sort(by: <)
+names2
