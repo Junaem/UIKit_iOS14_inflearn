@@ -67,3 +67,69 @@ for book in books {
 //        break
 //    }
 }
+
+
+
+// Class
+
+class MyInfo {
+    enum GenderType {
+        case male
+        case female
+    }
+    
+    init(gender: GenderType) {
+        self.gender = gender
+    }
+    
+    private var gender: GenderType
+    var name = ""
+    var age = 0
+    
+    func isAdult() -> Bool {
+        if age > 19 {
+            return true
+        }
+        return false
+    }
+}
+
+var myInfo = MyInfo(gender: .male)
+var myInfo2 = myInfo
+myInfo2.age = 4
+myInfo.age
+
+
+class GameInfo {
+    var homeScore = 0
+    var awayScore = 0
+    // final func로 바꾸면 override 불가능
+    func presentScore() -> String {
+        return homeScore.description + " : " + awayScore.description
+    }
+}
+
+class Soccer: GameInfo {
+    var time = 0
+}
+
+class Baseball: GameInfo {
+    override func presentScore() -> String {
+        return homeScore.description + " 대 " + awayScore.description
+    }
+    var round = 0
+}
+
+class Football: GameInfo {
+}
+
+let soccer = Soccer()
+soccer.homeScore = 2
+soccer.awayScore = 1
+soccer.presentScore()
+
+let baseball = Baseball()
+baseball.homeScore = 4
+baseball.awayScore = 5
+baseball.round = 4
+print(baseball.presentScore())
